@@ -34,6 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\amigos.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\htmlpage.html" />
   </ItemGroup>
 

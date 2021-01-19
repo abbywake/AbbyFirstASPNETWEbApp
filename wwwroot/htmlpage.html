@@ -1,37 +1,46 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Prof. Ganderson Fan Site</title>
+    <link runat="server" rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="images/favicon.ico" type="image/ico" />
+    <title>IS413 Assignment</title>
     <link href="css/main.css" rel="stylesheet" />
+
 </head>
 <body>
-    <h1>Prof. Ganderson Fan Site</h1>
-    <img  src="images/ganderson.jfif"/>
-    <p>Prof. Ganderson is the best Professor in the IS department at BYU. </p>
+    <h1>Abby Wakefield</h1>
+    <div class="container">
+    <img class="size-hell" src="images/amigos.JPG" />
+    </div>
+    <p>If I'm being completely honest, I'm not even sure what we are going to learn in this class.
+    So I hope to understand not only what the topics are, but how to do all of the topics!</p>
     <br />
-    <p>Pop Quiz: We love him because:  </p>
+    <p>Top 3 jobs I am interested in after graduation:   </p>
     <ul class="quiz-props">
-        <li>A: The locks he had when he was growing up </li>
-        <li>B: Eat lots of bacon </li>
-        <li>C: Million dollar smile </li>
-        <li>D: Cares about students </li>
-        <li>E: All of the above </li>
+        <li>1. Data Analyst </li>
+        <li>2. Cyber Security  </li>
+        <li>3. 1950's house wife</li>
     </ul>
-    <h2>Fan Mail </h2>
+    <h1>Please enter the total percentage from each course that you ended up with </h1>
     <form>
-        <label>From: </label>
-        <input id="from"/>
-        <br/>
-        <label>Email: </label>
-        <input id="email"/>
+        <label>Assignments: (out of 50%) </label>
+        <input id="assignment" />
         <br />
-        <label>Subject: </label>
-        <input id="subject"/>
+        <label>Group Projects: (out of 10%) </label>
+        <input id="email" />
         <br />
-        <label>Message: </label>
-        <textarea id="message" rows="5"></textarea>
+        <label>Quizzes: (out of 10%) </label>
+        <input id="quiz" />
         <br />
-        <input type="submit" value="Send Message" id="submit"/>
+        <label>Exams: (out of 20%) </label>
+        <input id="exam" />
+        <br />
+        <label>Intex: (out of 10%) </label>
+        <input id="intex" />
+        <br />
+        <br />
+        <input type="submit" value="Submit Button" id="submit" />
+
     </form>
     <script src="js/fanMail.js"></script>
 </body>
