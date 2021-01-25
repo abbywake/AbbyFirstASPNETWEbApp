@@ -1,19 +1,24 @@
-﻿<!DOCTYPE html>
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Abby Wakefield About";
+
+}
+
+<!DOCTYPE html>
 <html>
 <head>
-    <link runat="server" rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link runat="server" rel="icon" href="images/favicon.ico" type="image/ico" />
-    <title>IS413 Assignment</title>
-    <link href="css/main.css" rel="stylesheet" />
-
+    <link href="~/css/main.css" rel="stylesheet" />
 </head>
+
 <center>
     <body>
         <h1>Abby Wakefield</h1>
         <div class="container">
             <img class="size-hell" src="images/amigos.JPG" />
         </div>
-        <br/>
+        <br />
         <p>
             If I'm being completely honest, I'm not even sure what we are going to learn in this class.
             So I hope to understand not only what the topics are, but how to do all of the topics!
@@ -26,7 +31,7 @@
             <li>3. 1950's house wife</li>
         </ul>
         <h1>Please enter the total percentage from each course that you ended up with </h1>
-        <form>
+        @*<form>
             <label>Assignments: (out of 50%) </label>
             <input id="assignment" />
             <br />
@@ -45,8 +50,8 @@
             <br />
             <input type="submit" value="Submit Button" id="submit" />
 
-        </form>
-        <script src="js/fanMail.js"></script>
+        </form>*@
+
     </body>
 </center>
 </html>

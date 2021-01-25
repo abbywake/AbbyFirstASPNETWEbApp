@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+
+    <head>
+        <link runat="server" rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link runat="server" rel="icon" href="images/favicon.ico" type="image/ico" />
+        <title>@ViewBag.Title</title>
+        <link href="~/css/main.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <header>
+            <h1>@ViewBag.Title</h1>
+            <menu>
+                <ul>
+                    <li><a asp-controller="Blah" asp-action="Index">home</a></li>
+                    <li><a asp-controller="Blah" asp-action="gradeCalc">Grade Calculator</a></li>
+                </ul>
+            </menu>
+        </header>
+        @RenderBody()
+        <footer>Love his adoring students</footer>
+
+
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="~/js/fanMail.js"></script>
+
+
+    </body>
+</html>

@@ -1,13 +1,11 @@
-﻿var submit = document.getElementById('submit')
+﻿$("#submit").click( function () {
+    var assignment = +$('#assignment').val();
+    var groupProject = +$('#email').val();
+    var quiz = +$('#quiz').val();
+    var exam = +$('#exam').val();
+    var intex = +$('#intex').val();
+    var total = ((assignment*(.50)) + (groupProject*(.10)) + (quiz*(.10)) + (exam*(.20)) + (intex*(.10)));
 
-
-submit.addEventListener('click', function () {
-    var assignment = +document.getElementById('assignment').value
-    var groupProject = +document.getElementById('email').value
-    var quiz = +document.getElementById('quiz').value
-    var exam = +document.getElementById('exam').value
-    var intex = +document.getElementById('intex').value
-    var total = assignment + groupProject + quiz + exam + intex;
     var grade; 
 
     if (total >= 93) {
@@ -50,6 +48,9 @@ submit.addEventListener('click', function () {
         grade = "E";
     }
 
+    alert("You ended up with " + total + "% " + "and a grade of a(n) " + grade);
 
-    alert("Your estimated grade will be " + total + "% with a grade letter of a(n) " + grade)
+
+
+
 });
