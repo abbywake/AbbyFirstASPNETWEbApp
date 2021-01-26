@@ -1,13 +1,16 @@
-﻿$("#submit").click( function () {
+﻿$("#submit").click(function () {
+    //assigning variables inside the '#submit' function - taking the info from what they entered to use it 
     var assignment = +$('#assignment').val();
     var groupProject = +$('#email').val();
     var quiz = +$('#quiz').val();
     var exam = +$('#exam').val();
     var intex = +$('#intex').val();
+    //takes those variables they entered and clculates how big of a part of the class they are. 
     var total = ((assignment*(.50)) + (groupProject*(.10)) + (quiz*(.10)) + (exam*(.20)) + (intex*(.10)));
 
     var grade; 
 
+    //this code takes the total for what they got in the class and assigned a grade letter 
     if (total >= 93) {
         grade = "A";
     }
@@ -47,7 +50,7 @@
     else {
         grade = "E";
     }
-
+    //output alert with their percentage and letter grade 
     alert("You ended up with " + total + "% " + "and a grade of a(n) " + grade);
 
 
